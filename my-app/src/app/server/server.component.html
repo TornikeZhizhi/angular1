@@ -1,0 +1,22 @@
+<p>{{serverStatus}} Server id is {{ serverId}} -
+     {{getServerStatus()}}</p>
+
+<button class="btn btn-primary" [disabled]="!allowServer" (click)="onCreateServer()">
+    Add Server</button>
+<p [innerText]="!allowServer" ></p>
+
+<p [ngClass]="{'offline': status === 'offline'}">{{serverText}} - colored</p>
+
+<p *ngIf="allowServer; else noServer" >Server was created </p>
+
+<ng-template #noServer>
+    <p>no server was created</p>
+</ng-template>
+
+
+<div *ngFor="let server of servers">
+ {{server}}
+</div>
+
+<input type="text" class="form-control" (input)="inputHandler($event)">
+<input type="text" [(ngModel)]="serverText" >

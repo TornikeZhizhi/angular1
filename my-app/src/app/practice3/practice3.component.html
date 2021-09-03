@@ -1,0 +1,7 @@
+
+<button class="btn" (click)="buttonHandler()">Display Details</button>
+
+<p *ngIf="textToggle">Secret Password  = Tuna</p>
+<div *ngFor="let el of incArray; let i = index"
+[ngClass]="{'red': i >= 4}"
+>{{el}} - {{i}}</div>

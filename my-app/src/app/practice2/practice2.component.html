@@ -1,0 +1,9 @@
+<p>practice2 works!</p>
+
+<input [(ngModel)]="username" (input)="inputHandler()">
+
+<p>username = {{username}}</p>
+
+
+<button [disabled]="!buttonActive" (click)="username=''" 
+class="btn btn-primary">Button</button>

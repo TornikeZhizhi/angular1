@@ -1,9 +1,10 @@
-<p>practice2 works!</p>
+<button (click)="addHandler()">ADD</button>
+<input [(ngModel)]="modelText">
 
-<input [(ngModel)]="username" (input)="inputHandler()">
+<div>
+    <h3 *ngFor="let el of modalArray; let i = index;">{{el}} 
+    <span (click)="deleteHandler(i)">{{i}} - X</span>
+  </h3>
+</div>
 
-<p>username = {{username}}</p>
 
-
-<button [disabled]="!buttonActive" (click)="username=''" 
-class="btn btn-primary">Button</button>

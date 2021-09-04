@@ -1,0 +1,30 @@
+.box {
+
+    display:flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin:0 auto;
+}
+
+.box div {
+    flex: 0 0 24%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+
+.common_text {
+    text-align: center;
+}
+
+.win {
+    color: green;
+    font-weight: bold;
+}
+
+.lose {
+    font-weight: bold;
+    color: red;
+}

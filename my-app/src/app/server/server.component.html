@@ -8,7 +8,6 @@
 <p [ngClass]="{'offline': status === 'offline'}">{{serverText}} - colored</p>
 
 <p *ngIf="allowServer; else noServer" >Server was created </p>
-
 <ng-template #noServer>
     <p>no server was created</p>
 </ng-template>

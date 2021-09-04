@@ -7,31 +7,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Practice2Component {
 
-  username:string = "";
-  buttonActive:boolean=false;
+  modelText:string = "";
+  modalArray:any = [];
+
 
   constructor() { }
 
  
 
-  inputHandler(){
+addHandler(){
 
-   let usernameLength = this.username.length 
-    
-   console.log(usernameLength)
-   if(usernameLength > 0){
-    this.buttonActive = true
-   }else {
-    this.buttonActive = false
-   }
-   
-
+  if(this.modelText.length > 0){
+    this.modalArray.push(this.modelText);
   }
+  // this.modelText = ""
+}
 
-  // stringToEmpty(){
-    
-  //   this.username = "";
-  //   this.buttonActive = false
-  // }
+deleteHandler(x:number){
+
+  // this.modalArray.splice(x, 1);
+
+var filtered = this.modalArray.filter(function(value:any,index:any){ 
+      return index !== x;
+});
+this.modalArray = filtered
+
+}
+  
 
 }

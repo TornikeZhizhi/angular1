@@ -6,6 +6,7 @@ import { ServersComponent } from './servers/servers.component';
 import { FormsModule } from '@angular/forms';
 import { Practice2Component } from './practice2/practice2.component';
 import { Practice3Component } from './practice3/practice3.component';
+import { PokeDoceComponent } from './poke-doce/poke-doce.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { Practice3Component } from './practice3/practice3.component';
     ServersComponent,
     Practice2Component,
     Practice3Component,
+    PokeDoceComponent,
   ],
   imports: [
     BrowserModule,

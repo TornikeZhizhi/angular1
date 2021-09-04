@@ -1,0 +1,42 @@
+
+
+<div class="common_text">
+ <h4 [ngClass]="'win'" *ngIf="upExperience > downExperience; else noServer">Wining Hand</h4>
+ <ng-template #noServer>
+    <h4 class="lose">Losing Hand</h4>
+</ng-template>
+
+ <h4>Total Experience : {{upExperience}}</h4>
+</div>
+<div class="box">
+
+    
+
+<div *ngFor="let el of upArray">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{el.id}}.png" alt=""/>
+        <h4>{{el.name}}</h4>
+        <h5>type: {{el.type}}</h5>
+        <h6>type: {{el.base_experience}}</h6>
+    </div>
+</div>
+
+<hr/>
+<div class="common_text">
+<h4 class="lose" *ngIf="upExperience > downExperience; else noServer1">Losing Hand</h4>
+    <ng-template #noServer1>
+        <h4 class="win">Wining Hand</h4>
+    </ng-template>
+    <h4>Total Experience: {{downExperience}}</h4>
+</div>
+
+<div class="box">
+
+   
+    <div *ngFor="let el of downArray">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{el.id}}.png" alt=""/>
+        <h4>{{el.name}}</h4>
+        <h5>type: {{el.type}}</h5>
+        <h6>type: {{el.base_experience}}</h6>
+    </div>
+</div>
+

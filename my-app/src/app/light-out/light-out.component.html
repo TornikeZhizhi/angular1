@@ -1,0 +1,31 @@
+
+<h1 class="text-center title-header">Lights Out</h1>     
+<div class="container">
+    <div class="row">
+
+        <!-- light-on -->
+        <div class="col-md-6 col-md-offset-3 animated fadeIn game-cont">
+            <div class="row text-center">
+                <div class="lightit" *ngFor="let el of lightItem;let i = index"
+                 (click)="lightHandler(i+1)">
+                 </div>
+               
+            </div>
+           
+            <div class="winner-cont">
+                <div class="winner-msg">
+                    <h3>You won!</h3>
+                    <button class="btn btn-default reset-btn">Reset</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="well how-to">
+                <h3>How to play:</h3>
+                <p>Click on any of them to turn it and the four direct neighboring lights off or on.</p>
+                <p><strong>Win by closing all the lights.</strong></p>
+            </div>
+        </div>
+    </div>
+</div>
+

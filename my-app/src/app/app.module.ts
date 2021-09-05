@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { Practice2Component } from './practice2/practice2.component';
 import { Practice3Component } from './practice3/practice3.component';
 import { PokeDoceComponent } from './poke-doce/poke-doce.component';
+import { LightOutComponent } from './light-out/light-out.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { PokeDoceComponent } from './poke-doce/poke-doce.component';
     Practice2Component,
     Practice3Component,
     PokeDoceComponent,
+    LightOutComponent,
   ],
   imports: [
     BrowserModule,

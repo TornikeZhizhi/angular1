@@ -8,3 +8,31 @@
 </div>
 
 
+<div class="form_div">
+
+<label for="">
+  <span>height: </span>
+  <input type="text" [(ngModel)]="height">
+</label>
+
+<label for="">
+  <span>width: </span>
+  <input type="text" [(ngModel)]="width">
+</label>
+
+<label for="">
+  <span>backgroundColor: </span>
+  <input type="text" [(ngModel)]="backgroundColor">
+</label>
+<button (click)="addBoxHandler()">Add box</button>
+<!-- [ngStyle]="{'animation-delay.s': i , 'color' : 'red' }" -->
+<div class="mg" *ngFor="let el of boxArray; let i = index" [ngStyle]="{'width': el.width ,
+'height': el.height ,'backgroundColor' : el.backgroundColor }">
+  {{i}}
+  <button (click)="removeboxHandler(i)">remove box</button>
+</div>
+
+
+
+</div>
+

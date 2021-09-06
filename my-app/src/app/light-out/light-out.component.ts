@@ -17,7 +17,7 @@ export class LightOutComponent implements OnInit {
   }
 
 
-  lightHandler(index:any){
+  lightHandler(index:number){
     index = index - 1 
     document.getElementsByClassName("lightit")[index].classList.toggle("light-on");
 

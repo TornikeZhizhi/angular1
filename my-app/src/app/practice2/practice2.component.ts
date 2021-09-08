@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Ingredient} from "../shared/ingredient.model"
+
 
 @Component({
   selector: 'app-practice2',
@@ -9,7 +11,11 @@ export class Practice2Component {
 
   modelText:string = "";
   modalArray:any = [];
-
+  ingredients: Ingredient[] = [
+    new Ingredient("მსხალი",5),
+    new Ingredient("მსხალი",5),
+    new Ingredient("მსხალი",5)
+  ];
 
   height:number=59;
   width:number=59;
@@ -31,7 +37,7 @@ addBoxHandler(){
 
   this.boxArray.push(colorObject);
 
-  console.log(this.boxArray)
+  console.log(this.ingredients)
 
 }
 

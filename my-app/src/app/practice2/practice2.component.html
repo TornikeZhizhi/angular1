@@ -32,6 +32,9 @@
   <button (click)="removeboxHandler(i)">remove box</button>
 </div>
 
+<div *ngFor="let ingredient of ingredients">
+ {{ ingredient.name }} - {{ ingredient.amount }}
+</div>
 
 
 </div>

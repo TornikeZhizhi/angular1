@@ -14,6 +14,9 @@ import { RecipeItemComponent } from './recipe/recipe-list/recipe-item/recipe-ite
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { HeaderComponent } from './header/header.component';
+import { BindingFormComponent } from './binding-form/binding-form.component';
+import { BindingItemComponent } from './binding-form/binding-item/binding-item.component';
+import { BindingControlComponent } from './binding-form/binding-control/binding-control.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +33,9 @@ import { HeaderComponent } from './header/header.component';
     ShoppingListComponent,
     ShoppingEditComponent,
     HeaderComponent,
+    BindingFormComponent,
+    BindingItemComponent,
+    BindingControlComponent,
   ],
   imports: [
     BrowserModule,

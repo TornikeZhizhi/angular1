@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="todo_fluid">
+
+                <h2>Todo List</h2>
+
+                <app-binding-item
+                    *ngFor="let item of lastData;let i = index" [inputData]="item"
+                    [inputIndex]="i"
+                    (deleteIndex)="deleteIndexLast($event)"
+                 ></app-binding-item>
+                <app-binding-control (outputData)="todoArrays($event)"
+    
+                ></app-binding-control>
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+.todo_fluid {
+
+    max-width:500px;
+    background:orange;
+    padding:20px;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+}
+
+
+.todo_fluid div {
+    width:100%;
+}
+
+app-binding-item {
+    width:100%;
+}

@@ -9,6 +9,7 @@
                     *ngFor="let item of lastData;let i = index" [inputData]="item"
                     [inputIndex]="i"
                     (deleteIndex)="deleteIndexLast($event)"
+                    (editData)="editLastData($event)"
                  ></app-binding-item>
                 <app-binding-control (outputData)="todoArrays($event)"
     

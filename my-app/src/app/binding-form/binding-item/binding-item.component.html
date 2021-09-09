@@ -1,10 +1,18 @@
 <div class="todo_item">
-    <span>{{inputData}}</span>
-    <div>
-        <span>Edit</span>
-        <span style="display: inline-block;color:black;cursor:
+
+    <div class="main_box">
+        <span>{{inputData}}</span>
+        <div>
+            <span (click)="editHandler(inputIndex)">Edit</span>
+            <span style="display: inline-block;color:black;cursor:
          pointer;margin-left:25px"
          (click)="deleteHandler(inputIndex)"
->Delete</span>
+         >Delete</span>
+        </div>
+    </div>
+
+    <div class="edit_box hide">
+        <input type="text" [(ngModel)]="editInputData">
+        <button (click)="saveHandler(editInputData,inputIndex)">Save</button>
     </div>
 </div>

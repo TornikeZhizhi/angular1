@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class BindingFormComponent implements OnInit {
 
   lastData:any = [];
- 
+  
   constructor() { }
 
   ngOnInit(): void {
@@ -17,7 +17,6 @@ export class BindingFormComponent implements OnInit {
 
   todoArrays(data:any){
     this.lastData.push(data);
- 
   }
 
   deleteIndexLast(e:any){
@@ -26,8 +25,13 @@ export class BindingFormComponent implements OnInit {
       return index !== e;
     })
    
-    
   }
  
+  editLastData(e:any){
+    if(e.inputdata.length > 0){
+
+      this.lastData.splice(e.inputIndex,1,e.inputdata)
+    }
+  }
  
 }

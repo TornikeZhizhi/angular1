@@ -16,7 +16,11 @@ export class BindingFormComponent implements OnInit {
 
 
   todoArrays(data:any){
-    this.lastData.push(data);
+
+    if(data.length > 0){
+
+      this.lastData.push(data);
+    }
   }
 
   deleteIndexLast(e:any){

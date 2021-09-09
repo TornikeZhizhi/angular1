@@ -17,6 +17,9 @@ import { HeaderComponent } from './header/header.component';
 import { BindingFormComponent } from './binding-form/binding-form.component';
 import { BindingItemComponent } from './binding-form/binding-item/binding-item.component';
 import { BindingControlComponent } from './binding-form/binding-control/binding-control.component';
+import { MonsterSlayerComponent } from './monster-slayer/monster-slayer.component';
+import { SlayerTabsComponent } from './monster-slayer/slayer-tabs/slayer-tabs.component';
+import { SlayerControlsComponent } from './monster-slayer/slayer-controls/slayer-controls.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +39,9 @@ import { BindingControlComponent } from './binding-form/binding-control/binding-
     BindingFormComponent,
     BindingItemComponent,
     BindingControlComponent,
+    MonsterSlayerComponent,
+    SlayerTabsComponent,
+    SlayerControlsComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            Monster Slayer
+        </div>
+
+        <div class="col-md-9">
+            <app-slayer-tabs [test]="inHealthData"></app-slayer-tabs>
+        </div>
+
+        <div class="col-md-9">
+            <app-slayer-controls (outPutHealth)="mainPutHealth($event)">
+                
+            </app-slayer-controls>
+        </div>
+    </div>
+</div>
